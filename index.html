@@ -6,7 +6,9 @@
         <title>Ohmyfood! Réservez le menu qui vous convient</title>
         <link rel="stylesheet" href="Ressources/Styles/style.css" />
         <script src="https://kit.fontawesome.com/4071c411ae.js" crossorigin="anonymous"></script>
-        <style> @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;600;700;800&display=swap'); </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@100;300;500;600&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -27,69 +29,84 @@
       <section id="instructions">
         <h2>Fonctionnement</h2>
         <div class="step">
-          <p class="step-number">1</p>
           <div class="step-content">
             <i class="fa-solid fa-mobile-screen-button ico-step"></i>
+            <p class="step-number">1</p>
             <p>Choisissez un restaurant</p>
           </div>
         </div>
         <div class="step">
-          <p class="step-number">2</p>
           <div class="step-content">
             <i class="fa-solid fa-list-ul ico-step"></i>
+            <p class="step-number">2</p>
             <p>Composez votre menu</p>
           </div>
         </div>
         <div class="step--purple">
-          <p class="step-number">3</p>
           <div class="step-content step-true">
             <i class="fa-solid fa-store ico-step ico-step-true"></i>
+            <p class="step-number">3</p>
             <p>Dégustez au restaurant</p>
           </div>
+          
         </div>
       </section>
       <section id="restaurants">
         <h2>Restaurants</h2>
         <article class="bloc-restau">
-          <a href="#">
+          <a href="Ressources/palette-gout.html">
             <div class="new">
               <p>Nouveau</p>
             </div>
-            <img class="image-restau" src="Ressources/Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-            <h3>La palette du goût</h3>
-            <p class="loca-restau">Ménilmontant</p>
-            <i class="fa-regular fa-heart"></i>
+            <div class="image-block">
+              <img class="image-restau" src="Ressources/Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+            </div>
+            <div class="infos-restau">
+              <h3>La palette du goût</h3>
+              <p class="loca-restau">Ménilmontant</p>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </a>
+        </article>
+        <article class="bloc-restau">
+          <a href="Ressources/note-enchantee.html">
+            <div class="new">
+              <p>Nouveau</p>
+            </div>
+            <div class="image-block">
+              <img class="image-restau" src="Ressources/Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+            </div>
+            <div class="infos-restau">
+              <h3>La note enchantée</h3>
+              <p class="loca-restau">Charonne</p>
+              <i class="fa-solid fa-heart"></i>
+            </div>  
           </a>
         </article>
         <article class="bloc-restau">
           <a href="#">
-            <div class="new">
-              <p>Nouveau</p>
             </div>
-            <img class="image-restau" src="Ressources/Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
-            <h3>La note enchantée</h3>
-            <p class="loca-restau">Charonne</p>
-            <i class="fa-solid fa-heart"></i>
-          </a>
-        </article>
-        <article class="bloc-restau">
-          <a href="#">
-            <div class="new">
+            <div class="image-block">
+              <img class="image-restau" src="Ressources/Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
             </div>
-            <img class="image-restau" src="Ressources/Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-            <h3>À la française</h3>
-            <p class="loca-restau">Cité Rouge</p>
-            <i class="fa-regular fa-heart"></i>
+            <div class="infos-restau">
+              <h3>À la française</h3>
+              <p class="loca-restau">Cité Rouge</p>
+              <i class="fa-regular fa-heart"></i>
+            </div>
           </a>
         </article>
         <article class="bloc-restau">
         <a href="#">
-          <div class="new">
           </div>
-          <img class="image-restau" src="Ressources/Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
-          <h3>Le délice des sens</h3>
-          <p class="loca-restau">Folie-Méricourt</p>
-          <i class="fa-regular fa-heart"></i>
+          <div class="image-block">
+            <img class="image-restau" src="Ressources/Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+          </div>
+          <div class="infos-restau">
+            <h3>Le délice des sens</h3>
+            <p class="loca-restau">Folie-Méricourt</p>
+            <i class="fa-regular fa-heart"></i>
+          </div>
         </a>
 
       </section>

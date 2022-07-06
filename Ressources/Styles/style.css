@@ -1,5 +1,5 @@
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
 }
 
@@ -7,6 +7,10 @@ body {
 
     header {
         display: flex;
+        box-shadow: 0px 0px 8px rgba(0,0,0,.6);
+        z-index: 2;
+        position: relative;
+        flex-direction: column;
     }
 
     #logolink {
@@ -42,11 +46,12 @@ body {
     background-color: rgb(247, 246, 246);
     height: 400px;
     text-align: center;
+    padding: 30px;
    }
 
    h1 {
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 600;
     padding-top: 50px;
     margin-top: 0px;
    }
@@ -76,6 +81,11 @@ body {
 
    h2 {
     font-size: 35px;
+    margin-bottom: 35px;
+   }
+
+   .step {
+    margin-bottom: 30px;
    }
 
    .step-number {
@@ -86,6 +96,9 @@ body {
     font-size: 20px;
     text-align: center;
     color: white;
+    position: absolute;
+    left: -15px;
+    z-index: 2;
    }
 
    .step-content {
@@ -95,7 +108,10 @@ body {
     border-radius: 25px;
     box-shadow: 0px 6px 10px 6px #0000001f;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    margin-left: 15px;
    }
 
    .step-true {
@@ -138,7 +154,9 @@ body {
     border-radius: 3px;
     margin-left: 75%;
     text-align: center;
-    z-index: 1;
+    position: relative;
+    z-index: 2;
+    top: 25px;
    }
 
    a {
@@ -147,6 +165,13 @@ body {
 
     a:visited {
     text-decoration: none;
+    }
+
+    .image-block {
+        max-height: 300px;
+        overflow: hidden;
+        position: relative;
+        bottom: 55px;
     }
 
     .image-restau {
@@ -173,4 +198,86 @@ body {
 
     .recruitment-icon {
         margin: auto 10px auto 0;
+    }
+
+/* MENUS */
+
+    .image-menu {
+        z-index: 1;
+    }
+
+    .menu-title {
+        display: flex;
+        font-family: Shrikhand;
+        position: relative;
+        bottom: 35px;
+        font-size: 40px;
+    }
+
+
+    .menu-heart {
+        margin: 52px 0 0 65px;
+    }
+
+    #menu {
+        border-radius: 30px 30px 0 0;
+        position: relative;
+        bottom: 70px;
+        z-index: 2;
+        background-color: #eaeaea;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .menu-content {
+        background-color: white;
+        border-radius: 30px;
+        padding: 5px 20px 20px 20px;
+        height: 100px;
+        margin-bottom: 20px;
+        box-shadow: 1px 1px 10px 6px #8383832d;
+        text-align: left;
+    }
+
+    .section-title {
+        font-size: 22px;
+        font-weight: 100;
+        border-bottom: solid;
+        border-width: 4px;
+        border-bottom-color: #9ae2d1;
+        width: 50px;
+        padding-bottom: 10px;
+    }
+
+    .entree {
+        position: relative;
+        bottom: 40px;
+    }
+
+    .plate-name {
+        font-size: 22px;
+        font-weight: 400;      
+    }
+
+    .plate-undername {
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .price {
+        font-size: 22px;
+        font-weight: 400;
+        margin-left: 90%;
+        position: relative;
+        bottom: 35px;
+    }
+
+    .order-btn {
+        padding: 25px 60px 25px 60px;
+        position: relative;
+        top: 40px;
+    }
+
+    .bg {
+        background-color: #eaeaea;
     }
