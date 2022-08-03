@@ -629,6 +629,7 @@ body {
         @keyframes leftt {
             from {right: 0px;}
             to {right: 5%;}
+        }    
     }
 
 /* OPTIMISATIONS PETITS FORMATS*/    
