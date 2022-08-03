@@ -110,9 +110,19 @@ body {
         margin-right: auto;
     }
 
-    #logoheader {
+    #logoheader-restau {
         max-width: 250px;
-        margin: 20px;
+        margin: 0px 20px 20px 20px;
+    }
+
+    .header-arrow {
+        font-size: 26px;
+        align-self: left;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        top: 35px;
+        left: 15px;
     }
 
    #location {
@@ -228,6 +238,12 @@ body {
    }
 
 /* Restaurants */   
+
+    #logoheader {
+        max-width: 250px;
+        margin: 20px;
+    }
+
 
    #restaurants {
     padding: 30px;
@@ -363,6 +379,8 @@ body {
         margin: 0px;
         padding-bottom: 5px;
         padding-top: 5px;
+        text-decoration: none;
+        color: white;
     }
 
     .recruitment-icon {
@@ -511,6 +529,15 @@ body {
         text-overflow: ellipsis;
     }
 
+    .menu-content:hover > .plate-undername {
+        animation: 0.4s ease 0s normal forwards 1 reduce;
+      }
+
+    @keyframes reduce {
+        from {width: auto;}
+        to {width: 60%;}
+      }  
+
     .price {
         font-size: 22px;
         font-weight: 500;
@@ -567,7 +594,7 @@ body {
 
       @keyframes leftt {
         from {right: 0px;}
-        to {right: 50px;}
+        to {right: 25%;}
       }
 
     .order-btn {
@@ -598,11 +625,31 @@ body {
             max-width: 700px;
             margin: 30px;
         }
+
+        @keyframes leftt {
+            from {right: 0px;}
+            to {right: 5%;}
     }
 
 /* OPTIMISATIONS PETITS FORMATS*/    
 
     @media all and (max-width: 500px) {
+
+        .restau-head {
+            max-height: 350px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header-arrow {
+            font-size: 26px;
+            align-self: left;
+            text-decoration: none;
+            color: black;
+            position: relative;
+            top: 30px;
+            left: 15px;
+        }
 
         h1{
             font-size: 1.5rem;
@@ -613,6 +660,12 @@ body {
             max-width: 190px;
             margin: 22px 20px 18px 20px;
         }
+
+        #logoheader-restau {
+            max-width: 190px;
+            margin: 0px 20px 18px 20px;
+        }
+
 
         #location{
             height: 60px;
@@ -632,6 +685,10 @@ body {
 
         .btn--purple{
             padding: 18px 25px 18px 25px;
+        }
+
+        #instructions,#restaurants{
+            padding: 15px;
         }
 
         h2 {
