@@ -620,6 +620,11 @@ body {
 
     @media all and (min-width: 982px) {
 
+        .btn--purple:hover {
+            background: linear-gradient(to bottom right, #ff95e1, #b780fa);
+            opacity: 1;
+          }
+
         #search{
             overflow: hidden;
             z-index: 1;
@@ -768,6 +773,10 @@ body {
 
         .image-block{
             height: 198px;
+        }
+
+        .section-title {
+            font-size: 18px;
         }
 
         .menu-content {
