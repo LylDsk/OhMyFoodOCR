@@ -117,7 +117,6 @@ body {
 
     .header-arrow {
         font-size: 26px;
-        align-self: left;
         text-decoration: none;
         color: black;
         position: relative;
@@ -695,7 +694,6 @@ body {
 
         .header-arrow {
             font-size: 26px;
-            align-self: left;
             text-decoration: none;
             color: black;
             position: relative;
